@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Blood for Life: Track Requirement</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="bbg.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="row" id="header">
+        <div class="col-sm-12 col-md-6 col-lg-4" id="logo"><img src="logo.png" title="Logo: Blood for Life"></div>
+        <div class="col-sm-12 col-md-6 col-lg-8" id="menu">
+            <ul class="nav nav-pills">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="DonorRequirement.html">Donor Registration</a></li>
+                <li><a href="PostRequirement.html">Post Requirement</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+            </ul>
+        </div>
+    </div>
+    <div  id="input" class="col-sm-12 col-md-6 col-lg-4">
+        <div>
+            <h3>Track Requirement</h3>
+        </div>
+        <form role="form">
+            <div class = "form-group">
+                <label for="trackId"> Track # </label>
+                <input type = "text" class = "form-control input-sm" id = "trackId" name = "Track Id">
+            </div>
+            <div class="form-group" align="right">
+                <button type="submit" class="btn btn-primary">Track</button>
+            </div>
+        </form>
+                <div><hr></div>
+            <div class = "form-group">
+                <label for="bloodType"> Blood Type </label>
+                <input type = "text" disabled="true" class="form-control input-sm" id="bloodType" name = "Blood Type">
+            </div>
+            <div class = "form-group">
+                <label for="requirement"> Requirement </label>
+                <input type = "number" disabled="true" class="form-control input-sm" id="requirement" name = "Requirement">
+            </div>
+            <div class = "form-group">
+                <label for="first_name"> First Name </label>
+                <input type="text" disabled="true" class="form-control input-sm" id="first_name" name="First Name" value="">
+            </div>
+            <div class = "form-group">
+                <label for="last_name"> Last Name </label>
+                <input type="text" disabled="true" class="form-control input-sm" id="last_name" name="Last Name">
+            </div>
+            <div class = "form-group">
+                <label for="country"> Country </label>
+                <select id="country" disabled="true" class="form-control <input-sm"></select>
+            </div>
+            <div class = "form-group">
+                <label for="state"> State </label>
+                <select id = "state" disabled="true" class = "form-control input-sm"></select>
+            </div>
+            <div class="form-group">
+                <label for="place"> Place </label>
+                <input type = "text" disabled="true" class = "form-control input-sm" id = "place" name = "Place">
+            </div>
+            <div class="row">
+                <div><hr></div>
+            </div>
+    </div>
+    <div id="dataReturned" class="col-sm-12 col-md-6 col-lg-8">
+        <div class=""form-group>
+            <label for="data">Data returned</label>
+        </div>
+    </div>
+    <div class="row" id="footer">
+        <div class="col-sm-12 col-md-12 col-lg-12">Text</div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

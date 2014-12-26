@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <title>Blood for Life: Donor Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="bbg.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <!--<div class="row">
+        <div class="col-md-12">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+    </div>-->
+    <div class="row" id="header">
+        <div class="col-sm-12 col-md-6 col-lg-4" id="logo"><img src="logo.png" title="Logo: Blood for Life"></div>
+        <div class="col-sm-12 col-md-6 col-lg-8" id="menu">
+            <ul class="nav nav-pills">
+                <li><a href="Home.html">Home</a></li>
+                <li class="active"><a href="#">Donor Registration</a></li>
+                <li><a href="PostRequirement.html">Post Requirement</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" id="body">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="login">
+            <div>If you are already registered, you can <a href="Home.html">login here</a></div>
+        </div>
+
+        <div  id="input" class="col-sm-12 col-md-6 col-lg-4">
+            <div>
+                <h3>New Registration</h3>
+            </div>
+            <form role="form">
+                <div class = "form-group">
+                    <label for="bloodGroup"> Blood Group </label>
+                    <input type = "text" class = "form-control input-sm" id = "bloodGroup" name = "Blood Group">
+                </div>
+                <div class = "form-group">
+                    <label for="mobileNumber"> Mobile # * </label>
+                    <input type = "text" class = "form-control input-sm" id="mobileNumber" name = "Mobile Number">
+                </div>
+                <div class = "form-group">
+                    <label for="confirmMobileNumber"> Confirm Mobile # </label>
+                    <input type = "text" class = "form-control input-sm" id="confirmMobileNumber" name = "Confirm Mobile Number">
+                </div>
+                <div class = "form-group">
+                    <label for="first_name"> First Name * </label>
+                    <input type="text" class="form-control input-sm" id="first_name" name="First Name" value="">
+                </div>
+                <div class = "form-group">
+                    <label for="last_name"> Last Name * </label>
+                    <input type="text" class="form-control input-sm" id="last_name" name="Last Name">
+                </div>
+                <div class = "form-group">
+                    <label for="country"> Country </label>
+                    <select id="country" class="form-control input-sm"></select>
+                </div>
+                <div class = "form-group">
+                    <label for="state"> State </label>
+                    <select id = "state" class = "form-control input-sm"></select>
+                </div>
+                <div class="form-group">
+                    <label for="place"> Place * </label>
+                    <input type = "text" class = "form-control input-sm" id = "place" name = "Place">
+                </div>
+                <div class = "form-group">
+                    <label for="password"> Password * </label>
+                    <input type = "password" class = "form-control input-sm" id = "password" name = "Password">
+                </div>
+                <div class = "form-group">
+                    <label for="confirmPassword"> Confirm Password </label>
+                    <input type = "password" class = "form-control input-sm" id = "confirmPassword" name = "Confirm Password">
+                </div>
+                <div class="row">
+                    <div><hr></div>
+                </div>
+                <div class="form-group">
+                    <label for="t&c"><input type="checkbox" id="t&c"> I have read and understood the privacy policy.</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary ">Register</button>
+                </div>
+            </form>
+        </div>
+        <div id="privacy_text" class="col-sm-12 col-md-6 col-lg-8">
+            <h3>Privacy Policy</h3>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+            </p>
+        </div>
+    </div>
+    <div class="row" id="footer">
+        <div class="col-sm-12 col-md-12 col-lg-12">Text</div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src = "../Project24_12_14/Country-State.js"></script>
+
+</body>
+</html>

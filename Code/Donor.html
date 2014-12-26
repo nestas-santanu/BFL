@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title> Donor </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="bbg.css" type="text/css">
+</head>
+<body>
+<div class = "container">
+    <div class="row" id="header">
+        <div class="col-sm-12 col-md-6 col-lg-4" id="logo"><img src="logo.png" title="Logo: Blood for Life"></div>
+        <div class="col-sm-12 col-md-6 col-lg-8" id="menu">
+            <ul class="nav nav-pills">
+                <li><a href="#">Home</a></li>
+                <li><a href="DonorRegistration.html">Donor Registration</a></li>
+                <li><a href="PostRequirement.html">Post Requirement</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+            </ul>
+        </div>
+    </div>
+    <div  id="change1" class="col-sm-12 col-md-6 col-lg-4">
+        <div>
+            <h2> Change Profile </h2>
+        </div>
+        <form id="changeProfile" role="form">
+            <div class = "form-group">
+                <label for="bloodGroup"> Blood Group </label>
+                <input type = "text" class = "form-control input-sm" id = "bloodGroup" name = "Blood Group">
+            </div>
+            <div class = "form-group">
+                <label for="first_name"> First Name * </label>
+                <input type="text" class="form-control input-sm" id="first_name" name="First Name" value="">
+            </div>
+            <div class = "form-group">
+                <label for="last_name"> Last Name * </label>
+                <input type="text" class="form-control input-sm" id="last_name" name="Last Name">
+            </div>
+            <div class = "form-group">
+                <label for="country"> Country * </label>
+                <select id="country" class="form-control input-sm"></select>
+            </div>
+            <div class = "form-group">
+                <label for="state"> State * </label>
+                <select id = "state" class = "form-control input-sm"></select>
+            </div>
+            <div class = "form-group">
+                <label for="place"> Place * </label>
+                <input type = "text" class = "form-control input-sm" id = "place" name = "Place">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary ">Change</button>
+            </div>
+        </form>
+            <div class="row">
+                <div><hr></div>
+            </div>
+    </div>
+    <div id="change2" class="col-sm-12 col-md-6 col-lg-4">
+        <div>
+            <h2>Change Mobile #</h2>
+        </div>
+        <form id="changeMobile" role="form">
+            <div class = "form-group">
+                <label for="oldMobileNumber"> Old Mobile # </label>
+                <input type = "text" class = "form-control input-sm" id="oldMobileNumber" name = "Mobile Number">
+            </div>
+            <div class = "form-group">
+                <label for="newMobileNumber"> New Mobile # * </label>
+                <input type = "text" class = "form-control input-sm" id="newMobileNumber" name = "Mobile Number">
+            </div>
+            <div class = "form-group">
+                <label for="confirmMobileNumber"> Confirm Mobile # </label>
+                <input type = "text" class = "form-control input-sm" id="confirmMobileNumber" name = "Confirm Mobile Number">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary ">Change</button>
+            </div>
+        </form>
+            <div>
+                <h2>Change Password</h2>
+            </div>
+            <form id="changePassword" role="form">
+                <div class = "form-group">
+                    <label for="oldPassword"> Old Password * </label>
+                    <input type = "password" class = "form-control input-sm" id="oldPassword" name = "Old Password">
+                </div>
+                <div class = "form-group">
+                    <label for="newPassword"> New Password * </label>
+                    <input type = "password" class = "form-control input-sm" id="newPassword" name = "New Password">
+                </div>
+                <div class = "form-group">
+                    <label for="confirmPassword"> Confirm Password </label>
+                    <input type = "password" class = "form-control input-sm" id="confirmPassword" name = "Confirm Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary ">Change</button>
+                </div>
+            </form>
+    </div>
+    <div id="change3" class="col-sm-12 col-md-6 col-lg-4">
+        <form id="deleteAccount" role="form">
+        <div>
+            <h2>Delete Account</h2>
+        </div>
+        <div class = "form-group">
+            <p>
+                To permanently delete your account, click the Delete Account button.
+            </p>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Delete Account</button>
+        </div>
+        </form>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
