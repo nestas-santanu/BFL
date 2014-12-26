@@ -1,0 +1,85 @@
+We at nestas Consultancy, need to create an application to bring together people who wish to donate blood with those with a need for blood. 
+
+The application will
+1. have a mobile first approach
+2. take advantage of open source technologies and databases
+
+The application will be built in phases. The roadmap till phase 2 is as below. The current requirement is to fulfill Phase 1.
+
+Phase 1:
+In this phase we will create a mobile friendly web site 
+1. that will be functional to create a database of donors
+2. set standards for future enhancements
+3. test out some of the integretaion challenges with 3rd party tools for sending SMS.
+4. determine the database for the project
+
+The site will have a means to:
+1. allow a donor to register
+2. allow a registered donor to update her/his details
+3. allow a registered donor to opt out
+4. post requirements for someone who requires blood
+5. send requirement as a SMS to donors
+
+The site will fulfill the following requirements, which will be mobile friendly:
+1. a landing page (Home)
+2. a page to register a donor. This page will also include a privacy policy.
+3. a login for the registered donor
+4. a page for a registerd donor to view and update her/his profile and opt out
+5. a page for posting requirements by someone who requires blood
+6. a page by which a posted requirement can be tracked
+7. a background service to search donors by city/state/country for all the 3 or a given requirement and send an SMS to these donors.
+8. a Contribution page. This page will detail how the people can contribute voluntarily in spreading the word about the site, translating the site to different languages, SEO improvements, make the features of the site SMS friendly, etc.
+9. A common menu for all pages.
+
+Also, see Wireframes - https://moqups.com/laitumkrah@gmail.com/mSokdVSH/
+
+Technology:
+HTML/HTML5, CSS
+Javascript/jQuery/jQuery UI
+Ajax
+Bootstrap - http://getbootstrap.com/
+Twilio - https://www.twilio.com/ or any similar service
+Database: either of the following or a similar NoSQL DB
+a. CouchDB - http://couchdb.apache.org/
+b. Elasticsearch - http://www.elasticsearch.org/
+c. Orchestrate - https://orchestrate.io/
+
+IDE:
+Webstorm
+
+Source repository:
+GitHub
+
+Deployment
+1. For development and testing: Local IIS, locally installed database/ free DBaaS subscription
+2. For live site: Microsoft Azure/ Amazon AWS/ other servers to be determined later.
+
+Phase 2:
+In this phase we will 
+A. build in more SMS features into the system
+1. a donor should be able to register, update her/his details, opt out using mobile SMS service.
+2. posting and traking reqirements using  mobile SMS service.
+B. refactor code from Phase 1
+C. crowd source a database of blood banks
+
+Technology:
+HTML/HTML5, CSS
+Javascript/jQuery/jQuery UI
+Ajax
+Bootstrap - http://getbootstrap.com/
+Twilio - https://www.twilio.com/ or any similar service
+Node.js for server side code - http://nodejs.org/
+Database: either of the following or a similar NoSQL DB determined in Phase 1
+a. CouchDB - http://couchdb.apache.org/
+b. Elasticsearch - http://www.elasticsearch.org/
+c. Orchestrate - https://orchestrate.io/
+
+IDE:
+Webstorm
+
+Source repository:
+GitHub
+
+Deployment
+1. For development and testing: Local IIS/Express, locally installed database/ free DBaaS subscription
+2. For live site: Microsoft Azure/ Amazon AWS/ other servers to be determined later.
