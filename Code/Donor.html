@@ -27,15 +27,15 @@
         <form id="changeProfile" role="form">
             <div class = "form-group">
                 <label for="bloodGroup"> Blood Group </label>
-                <input type = "text" class = "form-control input-sm" id = "bloodGroup" name = "Blood Group">
+                <input type = "text" class = "form-control input-sm" id = "bloodGroup" name = "bloodGroup">
             </div>
             <div class = "form-group">
                 <label for="first_name"> First Name * </label>
-                <input type="text" class="form-control input-sm" id="first_name" name="First Name" value="">
+                <input type="text" class="form-control input-sm" id="first_name" name="firstName" value="">
             </div>
             <div class = "form-group">
                 <label for="last_name"> Last Name * </label>
-                <input type="text" class="form-control input-sm" id="last_name" name="Last Name">
+                <input type="text" class="form-control input-sm" id="last_name" name="lastName">
             </div>
             <div class = "form-group">
                 <label for="country"> Country * </label>
@@ -47,7 +47,7 @@
             </div>
             <div class = "form-group">
                 <label for="place"> Place * </label>
-                <input type = "text" class = "form-control input-sm" id = "place" name = "Place">
+                <input type = "text" class = "form-control input-sm" id = "place" name = "place">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary ">Change</button>
@@ -64,15 +64,15 @@
         <form id="changeMobile" role="form">
             <div class = "form-group">
                 <label for="oldMobileNumber"> Old Mobile # </label>
-                <input type = "text" class = "form-control input-sm" id="oldMobileNumber" name = "Mobile Number">
+                <input type = "text" class = "form-control input-sm" id="oldMobileNumber" name = "oldMobileNumber">
             </div>
             <div class = "form-group">
                 <label for="newMobileNumber"> New Mobile # * </label>
-                <input type = "text" class = "form-control input-sm" id="newMobileNumber" name = "Mobile Number">
+                <input type = "text" class = "form-control input-sm" id="newMobileNumber" name = "newMobileNumber">
             </div>
             <div class = "form-group">
                 <label for="confirmMobileNumber"> Confirm Mobile # </label>
-                <input type = "text" class = "form-control input-sm" id="confirmMobileNumber" name = "Confirm Mobile Number">
+                <input type = "text" class = "form-control input-sm" id="confirmMobileNumber" name = "confirmMobileNumber">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary ">Change</button>
@@ -84,15 +84,15 @@
             <form id="changePassword" role="form">
                 <div class = "form-group">
                     <label for="oldPassword"> Old Password * </label>
-                    <input type = "password" class = "form-control input-sm" id="oldPassword" name = "Old Password">
+                    <input type = "password" class = "form-control input-sm" id="oldPassword" name = "oldPassword">
                 </div>
                 <div class = "form-group">
                     <label for="newPassword"> New Password * </label>
-                    <input type = "password" class = "form-control input-sm" id="newPassword" name = "New Password">
+                    <input type = "password" class = "form-control input-sm" id="newPassword" name = "newPassword">
                 </div>
                 <div class = "form-group">
                     <label for="confirmPassword"> Confirm Password </label>
-                    <input type = "password" class = "form-control input-sm" id="confirmPassword" name = "Confirm Password">
+                    <input type = "password" class = "form-control input-sm" id="confirmPassword" name = "confirmPassword">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary ">Change</button>
@@ -118,6 +118,9 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="script/Country-State.js"></script>
+<script src="script/donor_validation.js"></script>
 
 </body>
 </html>

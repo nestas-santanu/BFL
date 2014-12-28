@@ -30,10 +30,10 @@
             <div>
                 <h3> New Requirement </h3>
             </div>
-            <form role="form">
+            <form role="form" id="postRequirement">
                 <div class = "form-group">
-                    <label for="bloodGroup"> Blood Group </label>
-                    <input type = "text" class = "form-control input-sm" id = "bloodGroup" name = "Blood Group">
+                    <label for="bloodType"> Blood Type </label>
+                    <select id="bloodType" class = "form-control input-sm" name = "bloodType"></select>
                 </div>
                 <div class = "form-group">
                     <label for="requirement"> Requirement* </label></br>
@@ -45,23 +45,23 @@
                     <h2> Patient Name </h2>
                 </div>
                 <div class = "form-group">
-                    <label for="first_name"> First Name * </label>
-                    <input type="text" class="form-control input-sm" id="first_name" name="First Name" value="">
+                    <label for="firstName"> First Name * </label>
+                    <input type="text" class="form-control input-sm" id="firstName" name="firstName" value="">
                 </div>
                 <div class = "form-group">
-                    <label for="last_name"> Last Name * </label>
-                    <input type="text" class="form-control input-sm" id="last_name" name="Last Name">
+                    <label for="lastName"> Last Name * </label>
+                    <input type="text" class="form-control input-sm" id="lastName" name="lastName">
                 </div>
                 <div>
                     <h2> Patient Location </h2>
                 </div>
                 <div class = "form-group">
                     <label for="address1"> Address 1 *</label>
-                    <input type = "text" class = "form-control input-sm" id = "address1" name = "Address 1">
+                    <input type = "text" class = "form-control input-sm" id = "address1" name = "address1">
                 </div>
                 <div class = "form-group">
                     <label for="address2"> Address 2</label>
-                    <input type = "text" class = "form-control input-sm" id = "address2" name = "Address 2">
+                    <input type = "text" class = "form-control input-sm" id = "address2" name = "address2">
                 </div>
                 <div class = "form-group">
                     <label for="country"> Country * </label>
@@ -73,28 +73,29 @@
                 </div>
                 <div class = "form-group">
                     <label for="place"> Place * </label>
-                    <input type = "text" class = "form-control input-sm" id = "place" name = "Place">
+                    <input type = "text" class = "form-control input-sm" id = "place" name = "place">
                 </div>
                 <div class = "form-group">
                     <label for="pin"> PIN * </label>
-                    <input type = "number" class = "form-control input-sm" id = "pin" name = "PIN">
+                    <input type = "number" class = "form-control input-sm" id = "pin" name = "pin">
                 </div>
                 <div class = "form-group">
                     <label for="mobileNumber"> Mobile # * </label>
-                    <input type = "text" class = "form-control input-sm" id="mobileNumber" name = "Mobile Number">
+                    <input type = "text" class = "form-control input-sm" id="mobileNumber" name = "mobileNumber">
                 </div>
                 <div class = "form-group">
                     <label for="confirmMobileNumber"> Confirm Mobile # </label>
-                    <input type = "text" class = "form-control input-sm" id="confirmMobileNumber" name = "Confirm Mobile Number">
+                    <input type = "text" class = "form-control input-sm" id="confirmMobileNumber" name = "confirmMobileNumber">
                 </div>
                 <div class="row">
                     <div><hr></div>
                 </div>
                 <div class="form-group">
-                    <label for="t&c"><input type="checkbox" id="t&c"> I have read and understood the privacy policy.</label>
+                    <label for="t&c"><input type="checkbox" name="checkbox" id="t&c"></label>
+                    <label> I have read and understood the privacy policy.</label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary ">Submit Request</button>
+                    <button type="submit" name="submit" class="btn btn-primary ">Submit Request</button>
                 </div>
             </form>
         </div>
@@ -117,8 +118,11 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src = "script/Country-State.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="script/Country-State.js"></script>
 <script src="script/datepicker.js"></script>
+<script src="script/postRequirement_validation.js"></script>
+<script src="script/bloodType.js"></script>
 
 </body>
 </html>

@@ -14,7 +14,7 @@
         <div class="col-sm-12 col-md-8 col-lg-8" id="menu">
             <ul class="nav nav-pills">
                 <li><a href="Home.html">Home</a></li>
-                <li><a href="DonorRequirement.html">Donor Registration</a></li>
+                <li><a href="DonorRegistration.html">Donor Registration</a></li>
                 <li><a href="PostRequirement.html">Post Requirement</a></li>
                 <li><a href="Contribute.html">Contribute</a></li>
             </ul>
@@ -24,10 +24,10 @@
         <div>
             <h3>Track Requirement</h3>
         </div>
-        <form role="form">
+        <form role="form" id="trackRequirement">
             <div class = "form-group">
                 <label for="trackId"> Track # </label>
-                <input type = "text" class = "form-control input-sm" id = "trackId" name = "Track Id">
+                <input type = "text" class = "form-control input-sm" id = "trackId" name = "trackId">
             </div>
             <div class="form-group" align="right">
                 <button type="submit" class="btn btn-primary">Track</button>
@@ -36,19 +36,19 @@
                 <div><hr></div>
             <div class = "form-group">
                 <label for="bloodType"> Blood Type </label>
-                <input type = "text" disabled="true" class="form-control input-sm" id="bloodType" name = "Blood Type">
+                <input type = "text" disabled="true" class="form-control input-sm" id="bloodType" name = "bloodType">
             </div>
             <div class = "form-group">
                 <label for="requirement"> Requirement </label>
-                <input type = "number" disabled="true" class="form-control input-sm" id="requirement" name = "Requirement">
+                <input type = "number" disabled="true" class="form-control input-sm" id="requirement" name = "requirement">
             </div>
             <div class = "form-group">
                 <label for="first_name"> First Name </label>
-                <input type="text" disabled="true" class="form-control input-sm" id="first_name" name="First Name" value="">
+                <input type="text" disabled="true" class="form-control input-sm" id="first_name" name="firstName" value="">
             </div>
             <div class = "form-group">
                 <label for="last_name"> Last Name </label>
-                <input type="text" disabled="true" class="form-control input-sm" id="last_name" name="Last Name">
+                <input type="text" disabled="true" class="form-control input-sm" id="last_name" name="lastName">
             </div>
             <div class = "form-group">
                 <label for="country"> Country </label>
@@ -60,7 +60,7 @@
             </div>
             <div class="form-group">
                 <label for="place"> Place </label>
-                <input type = "text" disabled="true" class = "form-control input-sm" id = "place" name = "Place">
+                <input type = "text" disabled="true" class = "form-control input-sm" id = "place" name = "place">
             </div>
             <div class="row">
                 <div><hr></div>
@@ -78,6 +78,8 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="script/trackRequirement_validation.js"></script>
 
 </body>
 </html>
