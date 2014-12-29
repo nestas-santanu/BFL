@@ -1,6 +1,5 @@
 /**
  * Created by Agastya on 23-12-2014.
- * comment for the sake of comment.
  */
 function PopulateCountry(response)
 {
