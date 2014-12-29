@@ -5,10 +5,10 @@ $.support.cors=true;
 function populateBloodType(response) {
     var bloodType;
     var bloodTypeName;
-    for(var i=0;i<response.rows.length;i++)
+    for(var i=0;i<response.total_rows;i++)
     {
-        bloodType=response.rows[i].type;
-        bloodTypeName=response.rows[i].name;
+        bloodType=response.rows[i].doc.type;
+        bloodTypeName=response.rows[i].doc.name;
         $("#bloodType").append(new Option(bloodTypeName,bloodType));
     }
     $("#bloodType").prepend("<option value='' selected='selected'></option>");
