@@ -2,8 +2,23 @@
  * Created by Agastya on 28-12-2014.
  */
 //
-function jsonCallback(response){}
-function populateBloodType(response) {
+function myajax1(URL,type,data,dataType,successHandler,errorHandler){
+    $.ajax(
+        {
+            url: URL,
+            type: type,
+            data: data,
+            dataType: dataType,
+
+            success: function(response, textStatus, jqXHR){
+                successHandler(response, textStatus, jqXHR);
+            },
+            error: function(jqXHR, textStatus, errorThrown){
+                errorHandler(jqXHR, textStatus, errorThrown);
+            }
+        });
+}
+function populateBloodType(response, textStatus, jqXHR) {
     var i = 0;
     var bloodType;
     var bloodTypeName;
@@ -16,31 +31,16 @@ function populateBloodType(response) {
     });
     $("#bloodType").prepend("<option value='' selected='selected'></option>");
 }
-function myajax1(URL,type,successHandler,errorHandler){
-    $.ajax(
-        {
-            url: URL,
-            type: type,
-
-            dataType: "jsonp",
-            jsonp: true,
-            jsonpCallback: "jsonCallback",
-
-            headers: {
-                Accept : "text/javascript",
-                "Content-Type": "text/javascript"
-            },
-            success: function(response){
-                successHandler(response);
-            },
-            error: function(){
-                errorHandler();
-            }
-        });
-}
-function errorHandler(){
-    alert("An error has occurred. \n The request cannot be completed.");
+function errorHandler(jqXHR, textStatus, errorThrown){
+    switch (jqXHR.status) {
+        case 0:
+            alert(jqXHR.status + " " + errorThrown);
+            break;
+        default:
+            $("#msg").append( jqXHR.responseJSON.reason + "\n" + jqXHR.status + " " +  jqXHR.responseJSON.error);
+            //$("#mybutton").prop('disabled', true);
+    }
 }
 $(document).ready(function(){
-    myajax1("http://192.168.0.107:5984/bfl-bg/_all_docs?include_docs=true&callback=?","GET",populateBloodType,errorHandler);
+    myajax1("http://192.168.0.107:5984/bfl-bg/_all_docs?include_docs=true", "GET", "", "json", populateBloodType, errorHandler);
 });

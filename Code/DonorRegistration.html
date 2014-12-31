@@ -44,6 +44,7 @@
             <div>
                 <h3>New Registration</h3>
             </div>
+            <div id="msg"></div>
             <form role="form" id="donorRegistration">
                 <div class = "form-group">
                     <label for="bloodType"> Blood Type </label>
@@ -55,7 +56,7 @@
                 </div>
                 <div class = "form-group">
                     <label for="confirmMobileNumber"> Confirm Mobile # </label>
-                    <input type = "text" class = "form-control input-sm" id="confirmMobileNumber" name = "confirmMobileNumber">
+                    <input type = "text" class = "form-control input-sm" id="confirmMobileNumber">
                 </div>
                 <div class = "form-group">
                     <label for="first_name"> First Name * </label>
@@ -93,7 +94,7 @@
                     <label class="t&c"> I have read and understood the privacy policy.</label>
                 </div>
                 <div class="form-group">
-                    <button type="submit" name="submit" class="btn btn-primary ">Register</button>
+                    <button type="submit" name="submit" class="btn btn-primary" id="btnDonorRegister">Register</button>
                 </div>
             </form>
         </div>
@@ -113,12 +114,13 @@
     </div>
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script src = "script/Country-State.js"></script>
 <script src="script/donorRegistration_validation.js"></script>
 <script src="script/bloodType.js"></script>
+<script src="script/PostData.js"></script>
 
 </body>
 </html>
