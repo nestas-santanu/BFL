@@ -66,15 +66,31 @@ function errorHandler(jqXHR, textStatus, errorThrown){
             //$("#mybutton").prop('disabled', true);
     }
 }
+
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
+
 $(document).ready(function() {
     $("#donorRegistration").submit(function () {
         var mobileNo = $("#mobileNumber").val();
         var url = "http://192.168.0.107:5984/bfl-donor/" + mobileNo;
-        alert(url);
-        var data=JSON.stringify($("#donorRegistration").serializeArray());
+       alert(url);
+        var data=JSON.stringify($("#donorRegistration").serializeObject());
         alert(data);
         myajax2(url, "PUT", data, "json",successCreateHandler,errorHandler);
-      //  myajax(url, $("#donorRegistration").serializeArray(), successHandler, errorHandler);
-      //  e.preventdefault();
     });
 });
