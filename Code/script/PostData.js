@@ -2,7 +2,7 @@
  * Created by Agastya on 28-12-2014.
  */
 function myajax2(URL,type,data,dataType,successHandler,errorHandler){
-    $.ajax(
+   $.ajax(
         {
             url: URL,
             type: type,
@@ -83,14 +83,39 @@ $.fn.serializeObject = function()
     });
     return o;
 };
-
-$(document).ready(function() {
-    $("#donorRegistration").submit(function () {
-        var mobileNo = $("#mobileNumber").val();
-        var url = "http://192.168.0.107:5984/bfl-donor/" + mobileNo;
-       alert(url);
-        var data=JSON.stringify($("#donorRegistration").serializeObject());
-        alert(data);
-        myajax2(url, "PUT", data, "json",successCreateHandler,errorHandler);
+/*function getScript(address,success) {
+    $.ajax({
+        url: address,
+        dataType: "script",
+       // async: false,
+        success: function() {
+            success();
+        }
     });
-});
+}
+function successgetScript() {
+        var mobileNo = $("#mobileNumber").val();
+        var url = "http://192.168.0.108:5984/bfl-donor/" + mobileNo;
+        alert(url);
+        var data = JSON.stringify($("#donorRegistration").serializeObject());
+        alert(data);
+        myajax2(url, "PUT", data, "json", successCreateHandler, errorHandler);
+}
+$(document).ready(function() {
+    $("#btnDonorRegister").click(function () {
+        var mobileNo = $("#mobileNumber").val();
+        var url = "http://192.168.0.108:5984/bfl-donor/" + mobileNo;
+        alert(url);
+        var data = JSON.stringify($("#donorRegistration").serializeObject());
+        alert(data);
+        myajax2(url, "PUT", data, "json", successCreateHandler, errorHandler);
+        //getScript("script/donorRegistration_validation.js",successgetScript);
+       /* var mobileNo = $("#mobileNumber").val();
+        var url = "http://192.168.0.108:5984/bfl-donor/" + mobileNo;
+        alert(url);
+        var data = JSON.stringify($("#donorRegistration").serializeObject());
+        alert(data);
+        myajax2(url, "PUT", data, "json", successCreateHandler, errorHandler);
+
+    });
+}); */

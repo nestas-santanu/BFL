@@ -24,8 +24,8 @@ function populateBloodType(response, textStatus, jqXHR) {
     var bloodTypeName;
 
     $.each(response.rows, function(){
-        bloodType=response.rows[i].doc.type;
-        bloodTypeName=response.rows[i].doc.name;
+        bloodType=response.rows[i].value.type;
+        bloodTypeName=response.rows[i].value.name;
         $("#bloodType").append(new Option(bloodTypeName,bloodType));
         i++;
     });
@@ -42,5 +42,5 @@ function errorHandler(jqXHR, textStatus, errorThrown){
     }
 }
 $(document).ready(function(){
-    myajax1("http://192.168.0.107:5984/bfl-bg/_all_docs?include_docs=true", "GET", "", "json", populateBloodType, errorHandler);
+    myajax1("http://192.168.0.108:5984/bfl-bg/_design/bg/_view/all_A-Z", "GET", "", "json", populateBloodType, errorHandler);
 });

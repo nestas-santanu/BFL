@@ -48,7 +48,12 @@ $(function () {
             checkbox: "Please agree to terms and conditions"
         },
         submitHandler: function(form){
-            form.submit();
+            var mobileNo = $("#mobileNumber").val();
+            var url = "http://192.168.0.108:5984/bfl-donor/" + mobileNo;
+            alert(url);
+            var data = JSON.stringify($("#donorRegistration").serializeObject());
+            alert(data);
+            myajax2(url, "PUT", data, "json", successCreateHandler, errorHandler);
         }
     });
 
