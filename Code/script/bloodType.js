@@ -1,7 +1,6 @@
 /**
  * Created by Agastya on 28-12-2014.
  */
-//
 function myajax1(URL,type,data,dataType,successHandler,errorHandler){
     $.ajax(
         {
